@@ -9,4 +9,12 @@
     <string name="home">Home</string>
     <string name="open_nav">Open Navigation Drawer</string>
     <string name="close_nav">Close Navigation Drawer</string>
+    <string name="justin_chipman">Justin Chipman</string>
+    <string name="n01598472_humber_ca">n01598472@humber.ca</string>
+    <string name="exit_msg">Do you want to exit the app?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="justin_chipman_n01598472">Justin Chipman - N01598472</string>
+    <string name="change_image">Change Image</string>
+    <string name="justin_chipman_clicks">"Justin Chipman - Clicks: "</string>
 </resources>
