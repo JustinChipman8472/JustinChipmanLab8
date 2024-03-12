@@ -2,6 +2,7 @@
 package justin.chipman.n01598472;
 
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -92,6 +93,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 .setMessage(R.string.exit_msg)
                 .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
+                        clearSharedPreferences();
                         MainActivity.this.finishAffinity();
                     }
                 })
@@ -104,4 +106,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         AlertDialog alert = builder.create();
         alert.show();
     }
+
+    private void clearSharedPreferences() {
+        SharedPreferences prefs = getSharedPreferences("SharedPrefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.clear();
+        editor.apply();
+    }
+
 }
