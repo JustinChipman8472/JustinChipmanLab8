@@ -31,24 +31,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.drawer_layout), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.jusdrawer_layout), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        Toolbar toolbar = findViewById(R.id.toolbar); //Ignore red line errors
+        Toolbar toolbar = findViewById(R.id.justoolbar); //Ignore red line errors
         setSupportActionBar(toolbar);
-        drawerLayout = findViewById(R.id.drawer_layout);
-        NavigationView navigationView = findViewById(R.id.nav_view);
+        drawerLayout = findViewById(R.id.jusdrawer_layout);
+        NavigationView navigationView = findViewById(R.id.jusnav_view);
         navigationView.setNavigationItemSelectedListener(this);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open_nav,
                 R.string.close_nav);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
-            navigationView.setCheckedItem(R.id.nav_home);
+            getSupportFragmentManager().beginTransaction().replace(R.id.jusfragment_container, new HomeFragment()).commit();
+            navigationView.setCheckedItem(R.id.jusnav_home);
         }
 
         OnBackPressedDispatcher dispatcher = getOnBackPressedDispatcher();
@@ -68,15 +68,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int itemId = item.getItemId();
 
-        if (itemId == R.id.nav_home) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
-        } else if (itemId == R.id.nav_settings) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
-        } else if (itemId == R.id.nav_share) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ShareFragment()).commit();
-        } else if (itemId == R.id.nav_about) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutFragment()).commit();
-        } else if (itemId == R.id.nav_logout) {
+        if (itemId == R.id.jusnav_home) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.jusfragment_container, new HomeFragment()).commit();
+        } else if (itemId == R.id.jusnav_settings) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.jusfragment_container, new SettingsFragment()).commit();
+        } else if (itemId == R.id.jusnav_share) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.jusfragment_container, new ShareFragment()).commit();
+        } else if (itemId == R.id.jusnav_about) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.jusfragment_container, new AboutFragment()).commit();
+        } else if (itemId == R.id.jusnav_logout) {
             showExitConfirmationDialog();
             Toast.makeText(this, getString(R.string.logout), Toast.LENGTH_SHORT).show();
         }

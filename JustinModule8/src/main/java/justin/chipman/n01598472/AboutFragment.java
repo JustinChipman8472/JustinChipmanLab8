@@ -38,10 +38,10 @@ public class AboutFragment extends Fragment {
         prefs = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
 
 
-        ToggleButton toggleButton = view.findViewById(R.id.toggleButton);
-        tvEmailValue = view.findViewById(R.id.tvEmailValue);
-        tvIDValue = view.findViewById(R.id.tvIDValue);
-        tvCheckboxValue = view.findViewById(R.id.tvCheckboxValue);
+        ToggleButton toggleButton = view.findViewById(R.id.justoggleButton);
+        tvEmailValue = view.findViewById(R.id.justvEmailValue);
+        tvIDValue = view.findViewById(R.id.justvIDValue);
+        tvCheckboxValue = view.findViewById(R.id.justvCheckboxValue);
 
         toggleButton.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {

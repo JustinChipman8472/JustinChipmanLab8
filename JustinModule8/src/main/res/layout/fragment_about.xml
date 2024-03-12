@@ -5,7 +5,7 @@
     android:background="#FFCCBC">
 
     <TextView
-        android:id="@+id/tvFirstName"
+        android:id="@+id/justvFirstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Justin"
@@ -17,7 +17,7 @@
         android:layout_marginTop="20dp"/>
 
     <TextView
-        android:id="@+id/tvLastName"
+        android:id="@+id/justvLastName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Chipman"
@@ -26,39 +26,39 @@
         android:textStyle="bold"
         android:rotation="-45"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/tvFirstName"/>
+        android:layout_below="@id/justvFirstName"/>
 
     <ToggleButton
-        android:id="@+id/toggleButton"
+        android:id="@+id/justoggleButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textOff="Auto Rotate"
         android:textOn="Portrait Mode"
-        android:layout_below="@id/tvCheckboxValue"
+        android:layout_below="@id/justvCheckboxValue"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"/>
 
     <TextView
-        android:id="@+id/tvEmailValue"
+        android:id="@+id/justvEmailValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvLastName"
+        android:layout_below="@id/justvLastName"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"/>
 
     <TextView
-        android:id="@+id/tvIDValue"
+        android:id="@+id/justvIDValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvEmailValue"
+        android:layout_below="@id/justvEmailValue"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"/>
 
     <TextView
-        android:id="@+id/tvCheckboxValue"
+        android:id="@+id/justvCheckboxValue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvIDValue"
+        android:layout_below="@id/justvIDValue"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"/>
 

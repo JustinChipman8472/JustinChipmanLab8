@@ -5,7 +5,7 @@
     android:background="#ADD8E6">
 
     <TextView
-        android:id="@+id/tvSettings"
+        android:id="@+id/justtvSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Settings"
@@ -16,20 +16,21 @@
         android:layout_marginTop="20dp"/>
 
     <ImageView
-        android:id="@+id/imageViewSettings"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/jusimageViewSettings"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="centerInside"
         android:src="@drawable/ichigo"
-        android:layout_below="@id/tvSettings"
+        android:layout_below="@id/justtvSettings"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"/>
 
     <Button
-        android:id="@+id/btnAccessPhotos"
+        android:id="@+id/jusbtnAccessPhotos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Access Photos"
-        android:layout_below="@id/imageViewSettings"
+        android:layout_below="@id/jusimageViewSettings"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"/>
 

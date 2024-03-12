@@ -22,8 +22,8 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        imageView = view.findViewById(R.id.imageView);
-        Button buttonChangeImage = view.findViewById(R.id.btnChangeImage);
+        imageView = view.findViewById(R.id.jusimageView);
+        Button buttonChangeImage = view.findViewById(R.id.jusbtnChangeImage);
 
         buttonChangeImage.setOnClickListener(new View.OnClickListener() {
             @Override
