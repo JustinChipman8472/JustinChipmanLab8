@@ -1,18 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ShareFragment">
+    android:background="#FFB6C1">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/justvProfileLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Share Fragment"
+        android:text="Profile"
         android:textSize="30sp"
-        android:layout_centerInParent="true"
-        android:textColor="@color/lavender"/>
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <CheckBox
+        android:id="@+id/juscheckboxProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_below="@id/justvProfileLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/justvEmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_below="@id/juscheckboxProfile"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/jusetEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:layout_toEndOf="@id/justvEmailLabel"
+        android:layout_alignTop="@id/justvEmailLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/justvIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID:"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_below="@id/jusetEmail"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/jusetID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ID"
+        android:inputType="number"
+        android:layout_toEndOf="@id/justvIdLabel"
+        android:layout_alignTop="@id/justvIdLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"/>
+
+    <ImageButton
+        android:id="@+id/jusimageButtonProfile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ichigo"
+        android:scaleType="centerInside"
+        android:layout_below="@id/jusetID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
 
 </RelativeLayout>
