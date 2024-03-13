@@ -43,30 +43,31 @@ public class ShareFragment extends Fragment {
         boolean isChecked = checkBox.isChecked();
 
         if (!isValidEmail(email)) {
-            etEmail.setError("Invalid Email");
+            etEmail.setError(getString(R.string.invalid_email));
             return;
         }
 
         if (id.length() < 6) {
-            etID.setError("Minimum 6 digits required");
+            etID.setError(getString(R.string.minimum_6_digits_required));
             return;
         }
 
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences("SharedPrefs", getActivity().MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString("email", email);
-        editor.putString("id", id);
-        editor.putBoolean("checkbox", isChecked);
+        editor.putString(getString(R.string.email), email);
+        editor.putString(getString(R.string.id), id);
+        editor.putBoolean(getString(R.string.checkbox), isChecked);
         editor.apply();
 
-        Toast.makeText(getActivity(), "Email: " + email + "\nID: " + id, Toast.LENGTH_LONG).show();
+        String input = getString(R.string.email_colon) + email + getString(R.string.id_colon) + id;
+        Toast.makeText(getActivity(), input, Toast.LENGTH_LONG).show();
         clearFields();
     }
 
     private void displayCurrentTimeGmt() {
         SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss", Locale.getDefault());
         sdf.setTimeZone(TimeZone.getTimeZone("GMT"));
-        String gmtTime = "Justin Chipman | " + sdf.format(new Date()) + " GMT";
+        String gmtTime = getString(R.string.justin_line) + sdf.format(new Date()) + getString(R.string.gmt);
         Toast.makeText(getActivity(), gmtTime, Toast.LENGTH_LONG).show();
     }
 

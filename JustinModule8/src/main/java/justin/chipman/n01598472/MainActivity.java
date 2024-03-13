@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             return insets;
         });
 
-        Toolbar toolbar = findViewById(R.id.justoolbar); //Ignore red line errors
+        Toolbar toolbar = findViewById(R.id.justoolbar);
         setSupportActionBar(toolbar);
         drawerLayout = findViewById(R.id.jusdrawer_layout);
         NavigationView navigationView = findViewById(R.id.jusnav_view);

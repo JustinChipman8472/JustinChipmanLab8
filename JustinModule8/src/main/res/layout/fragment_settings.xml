@@ -8,7 +8,7 @@
         android:id="@+id/justtvSettings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Settings"
+        android:text="@string/settings"
         android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="#FF0000"
@@ -29,7 +29,7 @@
         android:id="@+id/jusbtnAccessPhotos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Access Photos"
+        android:text="@string/access_photos"
         android:layout_below="@id/jusimageViewSettings"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"/>

@@ -36,15 +36,15 @@ public class SettingsFragment extends Fragment {
 
         requestPermissionLauncher = registerForActivityResult(new ActivityResultContracts.RequestPermission(), isGranted -> {
             if (isGranted) {
-                Toast.makeText(requireContext(), "Permission allowed", Toast.LENGTH_SHORT).show();
-                openGallery();
+                Toast.makeText(requireContext(), getString(R.string.permission_allowed), Toast.LENGTH_SHORT).show();
+                navGallery();
             } else {
                 if (shouldShowRequestPermissionRationale(Manifest.permission.READ_EXTERNAL_STORAGE)) {
-                    Toast.makeText(requireContext(), "Permission denied", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(requireContext(), getString(R.string.permission_denied), Toast.LENGTH_SHORT).show();
                 } else {
                     // Permission denied twice
-                    Toast.makeText(requireContext(), "Permission denied. Manually allow permission", Toast.LENGTH_SHORT).show();
-                    redirectToAppInfo();
+                    Toast.makeText(requireContext(), getString(R.string.permission_denied), Toast.LENGTH_SHORT).show();
+                    goToAppInfo();
                 }
             }
         });
@@ -71,9 +71,9 @@ public class SettingsFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 if (checkPermission()) {
-                    openGallery();
+                    navGallery();
                 } else {
-                    requestPermission();
+                    reqPermission();
                 }
             }
         });
@@ -85,16 +85,16 @@ public class SettingsFragment extends Fragment {
                 Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED;
     }
 
-    private void requestPermission() {
+    private void reqPermission() {
         requestPermissionLauncher.launch(Manifest.permission.READ_EXTERNAL_STORAGE);
     }
 
-    private void openGallery() {
+    private void navGallery() {
         Intent galleryIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         galleryLauncher.launch(galleryIntent);
     }
 
-    private void redirectToAppInfo() {
+    private void goToAppInfo() {
         // Redirect the user to the app info page
         Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
         Uri uri = Uri.fromParts("package", requireActivity().getPackageName(), null);
