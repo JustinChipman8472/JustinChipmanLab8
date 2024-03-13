@@ -1,45 +1,45 @@
 <resources>
-    <string name="app_name">JustinLab8</string>
+    <string name="app_name" translatable="false">JustinLab8</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
     <string name="logout">Logout</string>
     <string name="about_us">About Us</string>
     <string name="share">Share</string>
-    <string name="settings">Settings</string>
-    <string name="home">Home</string>
-    <string name="open_nav">Open Navigation Drawer</string>
-    <string name="close_nav">Close Navigation Drawer</string>
-    <string name="justin_chipman">Justin Chipman</string>
-    <string name="n01598472_humber_ca">n01598472@humber.ca</string>
-    <string name="exit_msg">Do you want to exit the app?</string>
-    <string name="yes">Yes</string>
-    <string name="no">No</string>
-    <string name="justin_chipman_n01598472">Justin Chipman - N01598472</string>
-    <string name="change_image">Change Image</string>
-    <string name="justin_chipman_clicks">"Justin Chipman - Clicks: "</string>
-    <string name="permission_allowed">Permission allowed</string>
-    <string name="permission_denied">Permission denied</string>
-    <string name="invalid_email">Invalid Email</string>
-    <string name="minimum_6_digits_required">Minimum 6 digits required</string>
-    <string name="email">email</string>
-    <string name="id">id</string>
-    <string name="checkbox">checkbox</string>
-    <string name="email_colon">"Email: "</string>
-    <string name="id_colon">"\nID: "</string>
-    <string name="justin_line">"Justin Chipman | "</string>
-    <string name="gmt">" GMT"</string>
-    <string name="times">" times"</string>
-    <string name="accessed">"Accessed "</string>
-    <string name="no_data">NO DATA</string>
-    <string name="checkbox_colon">"Checkbox: "</string>
-    <string name="checked">Checked</string>
-    <string name="unchecked">Unchecked</string>
-    <string name="justin">Justin</string>
-    <string name="chipman">Chipman</string>
-    <string name="auto_rotate">Auto Rotate</string>
-    <string name="portrait_mode">Portrait Mode</string>
-    <string name="access_photos">Access Photos</string>
-    <string name="profile">Profile</string>
-    <string name="enter_email">Enter Email</string>
-    <string name="enter_id">Enter ID</string>
+    <string name="settings" translatable="false">Settings</string>
+    <string name="home" translatable="false">Home</string>
+    <string name="open_nav" translatable="false">Open Navigation Drawer</string>
+    <string name="close_nav" translatable="false">Close Navigation Drawer</string>
+    <string name="justin_chipman" translatable="false">Justin Chipman</string>
+    <string name="n01598472_humber_ca" translatable="false">n01598472@humber.ca</string>
+    <string name="exit_msg" translatable="false">Do you want to exit the app?</string>
+    <string name="yes" translatable="false">Yes</string>
+    <string name="no" translatable="false">No</string>
+    <string name="justin_chipman_n01598472" translatable="false">Justin Chipman - N01598472</string>
+    <string name="change_image" translatable="false">Change Image</string>
+    <string name="justin_chipman_clicks" translatable="false">"Justin Chipman - Clicks: "</string>
+    <string name="permission_allowed" translatable="false">Permission allowed</string>
+    <string name="permission_denied" translatable="false">Permission denied</string>
+    <string name="invalid_email" translatable="false">Invalid Email</string>
+    <string name="minimum_6_digits_required" translatable="false">Minimum 6 digits required</string>
+    <string name="email" translatable="false">email</string>
+    <string name="id" translatable="false">id</string>
+    <string name="checkbox" translatable="false">checkbox</string>
+    <string name="email_colon" translatable="false">"Email: "</string>
+    <string name="id_colon" translatable="false">"\nID: "</string>
+    <string name="justin_line" translatable="false">"Justin Chipman | "</string>
+    <string name="gmt" translatable="false">" GMT"</string>
+    <string name="times" translatable="false">" times"</string>
+    <string name="accessed" translatable="false">"Accessed "</string>
+    <string name="no_data" translatable="false">NO DATA</string>
+    <string name="checkbox_colon" translatable="false">"Checkbox: "</string>
+    <string name="checked" translatable="false">Checked</string>
+    <string name="unchecked" translatable="false">Unchecked</string>
+    <string name="justin" translatable="false">Justin</string>
+    <string name="chipman" translatable="false">Chipman</string>
+    <string name="auto_rotate" translatable="false">Auto Rotate</string>
+    <string name="portrait_mode" translatable="false">Portrait Mode</string>
+    <string name="access_photos" translatable="false">Access Photos</string>
+    <string name="profile" translatable="false">Profile</string>
+    <string name="enter_email" translatable="false">Enter Email</string>
+    <string name="enter_id" translatable="false">Enter ID</string>
 </resources>

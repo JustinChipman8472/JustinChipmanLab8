@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="logout">Se déconnecter</string>
+    <string name="about_us">À propos de nous</string>
+    <string name="share">partager</string>
+</resources>
